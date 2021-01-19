@@ -109,7 +109,7 @@ public class Converter {
             return Precedence.LOWER;
         } else if(isMultiplyOrDivide(x)) {
             if(isMultiplyOrDivide(y)) return Precedence.SAME;
-            return Precedence.LOWER;
+            return Precedence.HIGHER;
         }  else if(isAddOrSubtract(x)) {
             if(isAddOrSubtract(y)) return Precedence.SAME;
             if(isMultiplyOrDivide(y)) return Precedence.LOWER;
